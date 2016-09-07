@@ -1,0 +1,6 @@
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.exe.config
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.exe
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.pdb
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.exe
+c:\users\brandon\documents\visual studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.pdb
