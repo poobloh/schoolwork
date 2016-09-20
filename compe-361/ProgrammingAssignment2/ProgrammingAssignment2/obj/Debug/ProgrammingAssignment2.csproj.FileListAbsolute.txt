@@ -1,0 +1,6 @@
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Debug\ProgrammingAssignment2.exe.config
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\Debug\ProgrammingAssignment2.csprojResolveAssemblyReference.cache
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Debug\ProgrammingAssignment2.exe
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\bin\Debug\ProgrammingAssignment2.pdb
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\Debug\ProgrammingAssignment2.exe
+c:\users\brandon\documents\visual studio 2015\Projects\ProgrammingAssignment2\ProgrammingAssignment2\obj\Debug\ProgrammingAssignment2.pdb
