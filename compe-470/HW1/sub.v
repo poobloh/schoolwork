@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:21:03 09/21/2016 
+// Create Date:    23:05:53 09/28/2016 
 // Design Name: 
-// Module Name:    g1_dataflow
+// Module Name:    sub 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,9 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g1_dataflow(input [3:0] x, output [1:0] y);
-
-	assign y[0] = !(x[1] & x[0] & !x[2]);
-	assign y[1] = !(x[3] & x[2]);
+module sub(input [3:0] a, input [3:0] b, output reg [3:0] sub);
+	
+	always @(*)
+	begin
+		sub = a - b;
+	end
 
 endmodule

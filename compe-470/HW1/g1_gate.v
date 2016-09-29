@@ -18,8 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g1_gate(
-    );
-
+module g1_gate(input [3:0] x, output [1:0] y);
+	
+	wire in1;
+	nand nand1 (y[1], x[2], x[3]);
+	not x2not (in1, x[2]);
+	nand nand0 (y[0], x[1], x[0], in1);
 
 endmodule

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:21:03 09/21/2016 
+// Create Date:    23:32:35 09/28/2016 
 // Design Name: 
-// Module Name:    g1_dataflow
+// Module Name:    problem3_tb 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,9 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g1_dataflow(input [3:0] x, output [1:0] y);
+module problem3_tb();
 
-	assign y[0] = !(x[1] & x[0] & !x[2]);
-	assign y[1] = !(x[3] & x[2]);
+	sumG();
+	sumD();
+	sumB();
+
+	initial begin
+		a = 4'b0000; b = 4'b0000;
+		a = 4'b1111; b = 4'b1111;
+		a = 4'b1110; b = 4'b0111;
+		a = 4'b1010; b = 4'b0101;
+		a = 4'b0011; b = 4'b1100;
+		a = 4'b1010; b = 4'b0110;
+		a = 4'b1111; b = 4'b0001;
+		a = 4'b0000; b = 4'b1111;
+		a = 4'b0000; b = 4'b0001;
+		$finish;
+	end
 
 endmodule
