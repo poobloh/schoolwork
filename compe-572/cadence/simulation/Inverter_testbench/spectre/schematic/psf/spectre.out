@@ -1,0 +1,85 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 7.1.1.071 -- 20 May 2009
+Copyright (C) 1989-2009 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: castro   Host: volta   HostID: BF8204A6   PID: 7329
+Memory  available: 6.5482 GB  physical: 135.2623 GB
+CPU(1 of 16):  CPU 0  Intel(R) Xeon(R) CPU           X7350  @ 2.93GHz  2925.866MHz
+
+Simulating `input.scs' on volta at 11:41:53 AM, Sat Oct 8, 2016 (process id: 7329).
+Command line:
+     \
+        /export/opt/cadence/installs/SPB163/tools.lnx86/spectre/bin/32bit/spectre  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre3_6179_4 -format sst2 -raw ../psf +lqtimeout  \
+        900 -maxw 5 -maxn 5
+spectre pid = 7329
+
+Loading /export/opt/cadence/installs/SPB163/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /export/opt/cadence/installs/SPB163/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /export/opt/cadence/installs/SPB163/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /export/opt/cadence/installs/SPB163/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+
+Circuit inventory:
+              nodes 3
+            bsim3v3 2     
+          capacitor 1     
+            vsource 2     
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre3_6179_4, ).
+
+*********************************
+DC Analysis `dc': VG = (0 -> 3.3)
+*********************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmin = 1 pS
+    dc: VG = 100e-03     (3.03 %), step = 100e-03      (3.03 %)
+    dc: VG = 300e-03     (9.09 %), step = 100e-03      (3.03 %)
+    dc: VG = 500e-03     (15.2 %), step = 100e-03      (3.03 %)
+    dc: VG = 600e-03     (18.2 %), step = 100e-03      (3.03 %)
+    dc: VG = 800e-03     (24.2 %), step = 100e-03      (3.03 %)
+    dc: VG = 1           (30.3 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.1         (33.3 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.3         (39.4 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.5         (45.5 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.6         (48.5 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.8         (54.5 %), step = 100e-03      (3.03 %)
+    dc: VG = 1.9         (57.6 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.1         (63.6 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.3         (69.7 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.4         (72.7 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.6         (78.8 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.8         (84.8 %), step = 100e-03      (3.03 %)
+    dc: VG = 2.9         (87.9 %), step = 100e-03      (3.03 %)
+    dc: VG = 3.1         (93.9 %), step = 100e-03      (3.03 %)
+    dc: VG = 3.3          (100 %), step = 100e-03      (3.03 %)
+Total time required for dc analysis `dc': CPU = 10 ms, elapsed = 18.0299 ms.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (11:48:53 AM, Sat Oct 8, 2016):
+Time used: CPU = 134 ms, elapsed = 420 s (7m  0.0s), util. = 31.9e-03%.
+Time spent in licensing: elapsed = 59.9 ms.
+Virtual memory used = 4.77 Mbytes.
+spectre completes with 0 errors, 0 warnings, and 0 notices.

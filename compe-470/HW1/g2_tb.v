@@ -18,24 +18,24 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g2_tb();
+module g2_tb( );
 
 	reg [3:0] in;
 	wire [0:0] out;
 	
-	//reg [3:0] in1;
-	//wire [0:0] out1;
+	reg [3:0] in1;
+	wire [0:0] out1;
 	
 	reg [3:0] in2;
 	wire [0:0] out2;
 	
 	g2_dataflow DUTd(.x(in), .y(out));
-	//g2_behavioral DUTb(.x(in1), .y(out1));
+	g2_behavioral DUTb(.x(in1), .y(out1));
 	g2_gate DUTg(.x(in2), .y(out2));
 	
 	initial begin
 		in = (4'b0000);
-		//in1 = (4'b0000);
+		in1 = (4'b0000);
 		in2 = (4'b0000);
 	end
 

@@ -18,11 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g1_behavioral(input x0,x1,x2,x3, output reg y0, y1);
+module g1_behavioral(input [3:0] x, output reg [1:0] y);
 
-	always @(*) begin
-		y0 = !(x1 & x0 & !x2);
-		y1 = !(x3 & x2);
+	always @(*)
+	
+	begin
+		y[0] = !(x[1] & x[0] & !x[2]);
+		y[1] = !(x[3] & x[2]);
 	end
 
 endmodule

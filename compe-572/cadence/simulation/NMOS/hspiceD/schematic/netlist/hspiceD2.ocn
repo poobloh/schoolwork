@@ -1,0 +1,9 @@
+simulator( 'hspiceD )
+design(	 "/home/castro/cadence/simulation/NMOS/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/castro/cadence/simulation/NMOS/hspiceD/schematic" )
+desVar(	  "VIN" 5	)
+desVar(	  "VDD" 5	)
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()

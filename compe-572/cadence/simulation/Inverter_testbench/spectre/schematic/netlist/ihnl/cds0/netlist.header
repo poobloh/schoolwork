@@ -1,0 +1,5 @@
+
+// Library name: CMOS
+// Cell name: Inverter
+// View name: schematic
+subckt Inverter GND IN OUT VDD

@@ -1,0 +1,8 @@
+Loading the file
+'/export/opt/cadence/installs/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Oct  8 21:35:56 2016
+ERROR (OSSHNL-109): The cellview 'CMOS/Inverter_testbench/schematic' has been
+modified since the last extraction. Validate
+that the schematic is correct and
+run Check and Save to correct this error.
+
+End netlisting Oct  8 21:35:56 2016

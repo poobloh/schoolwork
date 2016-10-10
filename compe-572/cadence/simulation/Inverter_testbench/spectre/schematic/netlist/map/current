@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Inverter_testbench"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/castro/cadence/simulation/Inverter_testbench/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "CMOS/Inverter_testbench/schematic" "Inverter_testbench" )
+( "CMOS/Inverter/schematic" "Inverter" )
+ )
+( term
+ )
+( param
+ )
+( "Inverter_testbench" "ihnl/cds1/map" )
+( "Inverter" "ihnl/cds0/map" )
+ )

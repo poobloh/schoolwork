@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+CMOS/Inverter/schematic Inverter
+CMOS/Inverter_testbench/schematic Inverter_testbench
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+VG VG
+VDD VDD
+$endparam

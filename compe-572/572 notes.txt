@@ -1,0 +1,11 @@
+COMPE 572
+
+page of notes allowed on quiz
+
+NMOS with PDN (pull down network)
+	Parallel => Y = A+B
+	Series => Y = AB
+
+CMOS with PUN (pull up network)
+	Parallel => y + A' + B'
+	Series => 

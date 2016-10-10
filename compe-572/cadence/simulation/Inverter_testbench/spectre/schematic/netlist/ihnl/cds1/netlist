@@ -1,0 +1,8 @@
+
+// Library name: CMOS
+// Cell name: Inverter_testbench
+// View name: schematic
+I0 (0 net1 net3 net2) Inverter
+C0 (net3 0) capacitor c=50f m=1
+V0 (net2 0) vsource type=dc dc=VDD
+VG (net1 0) vsource type=dc dc=VG

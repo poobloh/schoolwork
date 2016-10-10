@@ -1,0 +1,112 @@
+Final Exam
+-removeFirst
+-removeLast
+-remove
+-find
+
+//tail can be pointed elsewhere
+
+1. Remove beginning of list
+2. Remove first
+3. Remove
+
+head = head.next;
+null.next
+Null PointerException
+
+if(head.next == null)
+if(head == tail)
+if(currentSize == 1)
+
+public E removeFirst() {
+	if(head == null)
+		return null;
+	E tmp = head.data;
+	if(head == tail)
+		head = tail = null; 
+	else
+		head = head.next;
+	currentSize--;
+	return tmp;
+	
+}
+
+for  remove last
+
+
+Node<E> current = head;
+Node<E> previous = null;
+previous -----> 0
+current -----> 0
+
+while(current.next != null)
+while(current != tail)
+
+public E removeLast(){
+	if(isEmpty())
+		return null;
+	if(head == tail)
+		return removeFirst();
+	E tmp = tail.data;
+	Node<E> current = head; previous = null;
+	while(current != tail){
+		previous = current;
+		current = current.next;
+	}
+
+	previous.next = null;
+	tail = previous;
+	currentSize--;
+	return tmp; //return this or V
+	return current.data; //return this or ^ _holy shit_, can remove (E tmp = tail.data) if returning this
+}
+
+public boolean isEmpty(){
+	return head == null;
+}
+
+public boolean isFull(){
+	return false;
+}
+
+The complexity of adding to the front of a linked list is O(1).
+The complexity of adding to the end of a linked list is O(n). OR O(1) with a tail pointer!
+-Empty
+-Single
+-First
+-Last
+-Middle
+
+public E remove(E obj){
+	Node<E> current = head.previous = null;
+	while(current != null){
+		if(((Comparable<E>)data).compareTo(obj)==0){
+			if(current == head)
+				return removeFirst();
+			if(current == tail)
+				return removeLast();
+			previous.next = current.next;
+			currentSize--;
+			return current.data;
+		}
+		previous = current;
+		current = current.next;
+		return null;
+	}
+}
+
+
+public boolean contains(E obj){
+	Node<E> current = head;
+	while(current != null){
+		if(((Comparable<E>)data).compareTo(obj)==0){
+		
+
+
+
+		return true;
+		}
+		previous = current;
+		current = current.next;
+	}
+}

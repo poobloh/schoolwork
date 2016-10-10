@@ -1,0 +1,18 @@
+simulator( 'spectre )
+design(	 "/home/castro/cadence/simulation/Inverter_testbench/spectre/schematic/netlist/netlist")
+resultsDir( "/home/castro/cadence/simulation/Inverter_testbench/spectre/schematic" )
+modelFile( 
+    '("/export/opt/ncsu-cdk-1.6.0.beta/models/spectre/standalone/tsmc35N.m" "")
+    '("/export/opt/ncsu-cdk-1.6.0.beta/models/spectre/standalone/tsmc35P.m" "")
+)
+analysis('dc ?param "VG"  ?start "0"  ?stop "3.3"  
+		?step "0.1"  )
+desVar(	  "VG" 3.3	)
+desVar(	  "VDD" 3.3	)
+envOption(
+	'analysisOrder  list("dc") 
+)
+temp( 27 ) 
+run()
+selectResult( 'dc )
+plot(getData("/net1") )

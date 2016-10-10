@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"CMOS\" \"NMOS\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Oct  8 22:45:08 2016"
+"title" ""
+"analysisList" "()"
+END

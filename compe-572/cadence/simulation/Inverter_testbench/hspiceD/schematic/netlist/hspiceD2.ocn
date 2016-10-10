@@ -1,0 +1,12 @@
+simulator( 'hspiceD )
+design(	 "/home/castro/cadence/simulation/Inverter_testbench/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/castro/cadence/simulation/Inverter_testbench/hspiceD/schematic" )
+desVar(	  "VG" 3.3	)
+desVar(	  "VDD" 3.3	)
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()
+desVar(	  "VG" 5	)
+run()
+run()

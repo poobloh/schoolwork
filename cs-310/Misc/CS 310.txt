@@ -1,0 +1,53 @@
+CS 310 Notes
+
+Clicker questions:
+The complexity of adding to the front of a linked list is [ O(1) ]
+The complexity of adding to the end of a linked list is [ O(n) ] but [ O(1) with tail pointer]
+
+
+Notes:
+use .compareTo instead of .equals for duplicate objects
+wants javadoc commenting
+
+Stack = LIFO
+Queue = FIFO
+
+
+LINKED LISTS
+===================================
+Testing your linked list:
+peek
+iterators
+stacks
+queues
+
+addfirst = O 1
+addlast = O n or 1 with tail ptr
+removefirst = O 1
+removelast = O n
+remove = O n
+peekfirst = O 1
+peeklast = O n or 1 with tail ptr
+
+// All O(1)
+addFirst
+addLast (w/ tail ptr)
+removeFirst
+peekFirst
+peekLast (w/ tail ptr)
+size
+isEmpty
+isFull
+makeEmpty
+
+// All O(n)
+contains
+iterator
+remove
+addLast
+removeLast
+peekLast
+
+
+STACKS
+===================================

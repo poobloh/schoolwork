@@ -1,0 +1,11 @@
+simulator( 'hspiceD )
+design(	 "/home/castro/cadence/simulation/NMOS/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/castro/cadence/simulation/NMOS/hspiceD/schematic" )
+analysis('dc ?source "/V1"  ?sweepType "Linear"  ?start "0"  
+		?stop "3.3"  ?numPoints "0.1"  )
+desVar(	  "VIN" 5	)
+desVar(	  "VDD" 5	)
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()

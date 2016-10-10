@@ -1,0 +1,6 @@
+    P0 (OUT IN VDD VDD) tsmc35P w=12.0u l=1.6u as=1.2e-11 ad=1.2e-11 \
+        ps=26.0u pd=26.0u m=1 region=sat
+    N0 (OUT IN GND GND) tsmc35N w=4u l=1.6u as=4e-12 ad=4e-12 ps=10u \
+        pd=10u m=1 region=sat
+ends Inverter
+// End of subcircuit definition.

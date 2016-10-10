@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "tsmc35N.scs"
+include "tsmc35P.scs"

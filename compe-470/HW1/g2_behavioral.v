@@ -18,10 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module g2_behavioral(input x0,x1,x2,x3, output reg y0);
+module g2_behavioral(input [3:0] x, output reg [0:0] y);
 
-	always @(*) begin
-		y0 = (x0^x1) ^ (x2^x3);
+	always @(*)
+	
+	begin
+		y[0] = (x[0]^x[1]) ^ (x[2]^x[3]);
 	end
 
 endmodule

@@ -1,0 +1,8 @@
+simulator( 'hspiceD )
+design(	 "/home/castro/cadence/simulation/Inverter/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/castro/cadence/simulation/Inverter/hspiceD/schematic" )
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()
+run()

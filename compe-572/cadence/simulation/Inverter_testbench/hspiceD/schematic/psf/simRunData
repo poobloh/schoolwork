@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"CMOS\" \"Inverter_testbench\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Oct  8 21:35:56 2016"
+"title" ""
+"analysisList" "()"
+END

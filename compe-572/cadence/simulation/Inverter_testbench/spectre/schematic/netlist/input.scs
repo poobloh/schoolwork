@@ -1,0 +1,42 @@
+// Generated for: spectre
+// Generated on: Oct  8 11:30:10 2016
+// Design library name: CMOS
+// Design cell name: Inverter_testbench
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters VDD=3.3 VG=3.3
+include "/export/opt/ncsu-cdk-1.6.0.beta/models/spectre/standalone/tsmc35N.m"
+include "/export/opt/ncsu-cdk-1.6.0.beta/models/spectre/standalone/tsmc35P.m"
+
+// Library name: CMOS
+// Cell name: Inverter
+// View name: schematic
+subckt Inverter GND IN OUT VDD
+    P0 (OUT IN VDD VDD) tsmc35P w=12.0u l=1.6u as=1.2e-11 ad=1.2e-11 \
+        ps=26.0u pd=26.0u m=1 region=sat
+    N0 (OUT IN GND GND) tsmc35N w=4u l=1.6u as=4e-12 ad=4e-12 ps=10u \
+        pd=10u m=1 region=sat
+ends Inverter
+// End of subcircuit definition.
+
+// Library name: CMOS
+// Cell name: Inverter_testbench
+// View name: schematic
+I0 (0 net1 net3 net2) Inverter
+C0 (net3 0) capacitor c=50f m=1
+V0 (net2 0) vsource type=dc dc=VDD
+VG (net1 0) vsource type=dc dc=VG
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dc dc param=VG start=0 stop=3.3 step=0.1 write="spectre.dc" \
+    oppoint=rawfile maxiters=150 maxsteps=10000 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

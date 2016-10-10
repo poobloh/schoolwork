@@ -1,0 +1,12 @@
+Verilog HDL at the gate level
+
+Three levels:
+behavioral = one or more "always" statement
+dataflow = only use "assigned" statements
+gate level = ...
+
+structural = any level (above)
+
+for HW1:
+G1 should have 3 v files (gate, dataflow, beh) 
+G2 should have 3 v files
